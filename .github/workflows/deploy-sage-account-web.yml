@@ -54,7 +54,7 @@ jobs:
         run: pnpm nx run SageAccountWeb:build
       # setup AWS creds
       - name: config-aws-creds
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v2
         with:
           aws-access-key-id: ${{ secrets.AKID }}
           aws-secret-access-key: ${{ secrets.AKSID }}
